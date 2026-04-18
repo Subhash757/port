@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Subhash K M – Information Science Engineering Student | Python, Java, ML, IoT Developer Portfolio"/>
+  <title>Subhash K M | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- Bubble Canvas -->
+  <canvas id="bubble-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Subhash<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <i class="fas fa-terminal"></i>&nbsp; Student & Developer
+      </div>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="neon-text">Subhash K M</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Information Science Engineering Student &amp; Tech Enthusiast
+      </p>
+      <p class="hero-description reveal">
+        Passionate about building smart solutions with <span class="highlight">Python</span>, <span class="highlight">Machine Learning</span>, and <span class="highlight">IoT</span>. Turning ideas into impactful digital experiences.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="resume.pdf" class="btn btn-secondary" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://github.com/Subhash757" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/subhash-k-m-86527537a" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:subhashkmsubhash4@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-graphic reveal">
+      <div class="code-window">
+        <div class="code-window-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">subhash.py</span>
+        </div>
+        <div class="code-body">
+          <pre><code><span class="c-keyword">class</span> <span class="c-class">Subhash</span>:
+  <span class="c-keyword">def</span> <span class="c-func">__init__</span>(self):
+    self.name   = <span class="c-str">"Subhash K M"</span>
+    self.role   = <span class="c-str">"ISE Student"</span>
+    self.skills = [
+      <span class="c-str">"Python"</span>, <span class="c-str">"Java"</span>,
+      <span class="c-str">"ML"</span>, <span class="c-str">"IoT"</span>
+    ]
+    self.gpa    = <span class="c-num">7.2</span>
+
+  <span class="c-keyword">def</span> <span class="c-func">build</span>(self, idea):
+    <span class="c-keyword">return</span> <span class="c-str">"Innovation 🚀"</span>
+
+me = <span class="c-class">Subhash</span>()
+<span class="c-func">print</span>(me.build(<span class="c-str">"future"</span>))</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>B.E Information Science Engineering</strong> student at <span class="highlight">Vidyavardhaka College of Engineering</span>, Mysore, passionate about technology, innovation, and creating real-world solutions.</p>
+          <p>Currently maintaining a GPA of <span class="highlight">7.2</span>, I actively explore the realms of Machine Learning, IoT development, and full-stack web development.</p>
+          <p>I believe in learning by doing — from designing PCBs at Kaynes Technology to building web systems, every experience has shaped my technical and leadership skills.</p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.E – ISE (2025–2028)</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <div>
+                <span class="info-label">College</span>
+                <span class="info-value">VCE, Mysore</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">K.G Hally, HD Kote, Mysore</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-star"></i>
+              <div>
+                <span class="info-label">GPA</span>
+                <span class="info-value">7.2 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-code"></i></div>
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Tech Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Internship</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Achievements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// my_skills</span>
+        <h2 class="section-title">Technical <span class="neon-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-terminal"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>AI / ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-microchip"></i></div>
+          <h3>IoT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Raspberry Pi</span>
+            <span class="skill-tag">ESP32</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects</span>
+        <h2 class="section-title">My <span class="neon-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-film"></i></div>
+            <div class="project-status completed">Completed</div>
+          </div>
+          <h3 class="project-title">Online Movie Ticket Booking System</h3>
+          <p class="project-desc">A web-based system that allows users to browse movies, select showtimes, choose seats, and book tickets online with secure payments. Admins can manage movies, schedules, and bookings efficiently.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>MySQL</span>
+            <span>GitHub</span>
+          </div>
+          <div class="project-links">
+            <span class="no-link"><i class="fas fa-lock"></i> Private Repo</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// achievements</span>
+        <h2 class="section-title">My <span class="neon-text">Achievements</span></h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-crown"></i></div>
+          <div class="achievement-content">
+            <h3>Leadership Role</h3>
+            <p>Coordinated team tasks, managed workflow, guided development, and ensured project completion with quality standards — demonstrating strong leadership and organizational abilities.</p>
+          </div>
+          <div class="achievement-glow"></div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-microchip"></i></div>
+          <div class="achievement-content">
+            <h3>Internship – Kaynes Technology</h3>
+            <p><strong>PCB Designer</strong> — Worked on PCB design, schematic creation, layout design, and component placement. Collaborated with engineers to test and improve circuit performance. Gained hands-on experience in electronics manufacturing.</p>
+          </div>
+          <div class="achievement-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contact</span>
+        <h2 class="section-title">Get In <span class="neon-text">Touch</span></h2>
+      </div>
+      <p class="contact-intro reveal">I'm open to internships, collaborations, and exciting opportunities. Feel free to reach out!</p>
+      <div class="contact-cards reveal">
+        <a href="mailto:subhashkmsubhash4@gmail.com" class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">subhashkmsubhash4@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/subhash-k-m-86527537a" target="_blank" class="contact-card">
+          <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">subhash-k-m-86527537a</span>
+          </div>
+        </a>
+        <a href="https://github.com/Subhash757" target="_blank" class="contact-card">
+          <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">Subhash757</span>
+          </div>
+        </a>
+        <div class="contact-card no-link-card">
+          <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-card-info">
+            <span class="contact-card-label">Location</span>
+            <span class="contact-card-value">K.G Hally, HD Kote, Mysore – 571114</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Subhash<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed &amp; Built with <span class="neon-text">❤</span> by Subhash K M</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Subhash757" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/subhash-k-m-86527537a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:subhashkmsubhash4@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
